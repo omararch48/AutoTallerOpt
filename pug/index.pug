@@ -41,4 +41,12 @@ block contentMain
                 .service-description__text
                     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officia praesentium distinctio consectetur molestiae.
         section.container 
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt adipisci reprehenderit eius aspernatur beatae ullam cumque cum quidem, est dignissimos mollitia fugit! Eligendi nihil dolorum tempore beatae exercitationem possimus?
+            .text-image
+                div(data-aos="fade-down").text-image__text
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt adipisci reprehenderit eius aspernatur beatae ullam cumque cum quidem, est dignissimos mollitia fugit! Eligendi nihil dolorum tempore beatae exercitationem possimus?
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nesciunt adipisci reprehenderit eius aspernatur beatae ullam cumque cum quidem, est dignissimos mollitia fugit! Eligendi nihil dolorum tempore beatae exercitationem possimus?
+                div(data-aos="fade-up").text-image__image
+                    figure 
+                        img(src="img/jpg/auto1.jpg", alt="Car example")
+        +Slider(indexSliderOne)
+        script(src="js/app_slider.js") 

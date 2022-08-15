@@ -1,0 +1,16 @@
+mixin Slider(sliderContents)
+    section.section-slider 
+        .slider-container
+            ul.slider.clear-list
+                each content in sliderContents
+                    if content[0] == 'img'
+                        li.slide: img(src=content[1], loading="lazy")
+                    else content[0] == 'text'
+                        li.slide
+                            .slide-information
+                                h3 #{content[1][0]}
+                                p #{content[1][1]}
+        .slider-buttons-container
+            .slider-buttons 
+                each image in images 
+                    .slider__button

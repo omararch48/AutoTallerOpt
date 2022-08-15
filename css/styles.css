@@ -583,15 +583,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .all_services__content {
+    box-shadow: 0rem 0.2rem 0.6rem var(--main-transparentBlack);
     margin:     0 auto;
     max-height: 0;
     overflow:   auto;
     padding:    0 4rem;
-    transition: max-height linear 0.2   s;
+    transition: max-height linear 0.2s;
     width:      98%;
 }
 
 .all_services__content.all_services__content-active {
+    margin-bottom: 1rem;
     max-height: 30rem;
     padding:    4rem;
 }

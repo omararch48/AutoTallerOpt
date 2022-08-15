@@ -592,7 +592,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .all_services__content.all_services__content-active {
-    max-height: 10rem;
+    max-height: 30rem;
     padding:    4rem;
 }
 

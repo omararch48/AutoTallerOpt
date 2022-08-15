@@ -583,22 +583,37 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .all_services__content {
-    padding:    0 4rem;
-    margin: 0 auto;
+    margin:     0 auto;
     max-height: 0;
-    overflow: auto;
-    transition: max-height linear 0.2s;
-    width: 98%;
+    overflow:   auto;
+    padding:    0 4rem;
+    transition: max-height linear 0.2   s;
+    width:      98%;
 }
 
 .all_services__content.all_services__content-active {
-    max-height: 30rem;
+    max-height: 10rem;
     padding:    4rem;
+}
+
+.all_services__content::-webkit-scrollbar {
+    background-color: var(--main-gray);
+    width:            1.2rem;
+}
+
+.all_services__content::-webkit-scrollbar-thumb {
+    background-color: var(--main-green);
+    border-radius:    1rem;
+}
+
+.all_services__content::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-darkGreen);
+    border-radius:    1rem;
 }
 
 @media (max-width: 600px) {
     .all_services__title_1 {
-        padding: 0 4rem 0 0;
+        padding:    0 4rem 0 0;
         text-align: center;
     }
     

@@ -72,7 +72,7 @@
                 changeSlide(index);
             });
         });
-        setInterval(changeSlide, 8000);
+        setInterval(changeSlide, 6000);
     });
 
 

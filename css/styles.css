@@ -839,19 +839,6 @@ body::-webkit-scrollbar-thumb:hover {
     width:            60%;
 }
 
-@media (max-width: 1000px) {
-    .tabs {
-        margin-top: 16rem;
-    }
-}
-
-@media (max-width: 800px) {
-    .tabs {
-        margin-top: 12rem;
-        width: 90%;
-    }
-}
-
 .tabs__head {
     display: flex;
 }
@@ -888,7 +875,7 @@ body::-webkit-scrollbar-thumb:hover {
 .tabs__body {
     background-color: var(--main-gray);
     box-shadow:       0rem 0.6rem 2rem rgba(0, 0, 0, 0.4);
-    height:           26rem;
+    height:           30rem;
     overflow-y:       scroll;
 }
 
@@ -915,13 +902,13 @@ body::-webkit-scrollbar-thumb:hover {
     display:          none;
     flex-direction:   column;
     justify-content:  center;
-    min-height:       26rem;
+    min-height:       30rem;
     padding:          2.6rem 4rem;
     width:            100%;
 }
 
 .tabs__container.tabs__container--selected {
-    display:         flex;
+    display: flex;
 }
 
 .tabs__row {

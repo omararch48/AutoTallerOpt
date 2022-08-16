@@ -6,6 +6,7 @@
     /* Colors */
     --main-black:            #100F0F;
     --main-green:            #0F3D3E;
+    --main-lightGreen:       #196465;
     --main-darkGreen:        #031f20;
     --main-gray:             #E2DCC8;
     --main-white:            #F1F1F1;
@@ -512,6 +513,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: transparent;
     height:           60rem;
     margin:           4rem auto;
+    max-width:        120rem;
     position:         relative;
     width:            95%;
 }
@@ -822,6 +824,158 @@ body::-webkit-scrollbar-thumb:hover {
     .all_services__list {
         width: 95%;
     }    
+}
+
+
+/********************************************************/
+/************************* Tabs *************************/
+/********************************************************/
+
+.tabs {
+    background-color: transparent;
+    margin:           0 auto;
+    margin-top:       20rem;
+    max-width:        120rem;
+    width:            60%;
+}
+
+@media (max-width: 1000px) {
+    .tabs {
+        margin-top: 16rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .tabs {
+        margin-top: 12rem;
+        width: 90%;
+    }
+}
+
+.tabs__head {
+    display: flex;
+}
+
+.tabs__tab.tabs__tab--selected {
+    background-color: var(--main-darkGreen);
+}
+
+.tabs__tab {
+    align-items:      center;
+    background-color: var(--main-lightGreen);
+    border-radius:    1rem 1rem 0 0;
+    color:            var(--main-white);
+    display:          flex;
+    justify-content:  center;
+    min-height:       6rem;
+    padding:          0.5rem;
+    width:            50%;
+}
+
+.tabs__tab:hover {
+    background-color: var(--main-green);
+    cursor:           pointer;
+}
+
+.tabs__tab.tabs__tab--selected:hover {
+    background-color: var(--main-darkGreen);
+}
+
+.tabs__tab h3 {
+    text-align: center;
+}
+
+.tabs__body {
+    background-color: var(--main-gray);
+    box-shadow:       0rem 0.6rem 2rem rgba(0, 0, 0, 0.4);
+    height:           26rem;
+    overflow-y:       scroll;
+}
+
+.tabs__body::-webkit-scrollbar {
+    background-color: var(--main-gray);
+    width:            1.2rem;
+}
+
+.tabs__body::-webkit-scrollbar-thumb {
+    background-color: var(--main-green);
+    border-radius:    1rem;
+}
+
+.tabs__body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-darkGreen);
+    border-radius:    1rem;
+}
+
+
+.tabs__container {
+    align-items:      center;
+    background-color: var(--main-gray);
+    color:            var(--main-darkGreen);
+    display:          none;
+    flex-direction:   column;
+    justify-content:  center;
+    min-height:       26rem;
+    padding:          2.6rem 4rem;
+    width:            100%;
+}
+
+.tabs__container.tabs__container--selected {
+    display:         flex;
+}
+
+.tabs__row {
+    align-items:     center;
+    display:         flex;
+    gap:             2rem;
+    flex-wrap:       wrap;
+    justify-content: space-between;
+    margin:          1rem 0;
+    width:           60%;
+}
+
+.tabs__social {
+    align-items:     center;
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: center;
+    width:           100%;
+}
+
+.tabs__social i {
+    font-size: 8rem;
+    margin:    3rem;
+    color:     var(--main-lightGreen);
+}
+
+.tabs__social i:hover {
+    color:  var(--main-darkGreen);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .tabs {
+        margin-top: 16rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .tabs {
+        margin-top: 12rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .tabs__row {
+        width: 75%;
+    }
+}
+
+@media (max-width: 450px) {
+    .tabs__row {
+        width: 90%;
+    }
 }
 
 

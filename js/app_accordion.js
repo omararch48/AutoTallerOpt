@@ -12,11 +12,9 @@
             if (contents[index].classList.contains('all_services__content-active')) {
                 contents[index].classList.remove('all_services__content-active');
                 titles[index].classList.remove('all_services__content-active');
-                console.log('crotolamo');
             } else {
                 contents[index].classList.add('all_services__content-active');
                 titles[index].classList.add('all_services__content-active');
-                console.log('crotolamo');
             }
         });
     });
